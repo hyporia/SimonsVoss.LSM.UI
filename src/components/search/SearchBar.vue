@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <input type="search" v-model="term" />
+    <input type="search" v-model="term" v-on:keyup.enter="searchEntities" />
     <button class="search-button" @click="searchEntities">search</button>
   </div>
 </template>
